@@ -1,8 +1,4 @@
-# Big-O Notation Exercises
-
-What is the worst-case time complexity for the following algorithms?
-
-#### #1
+#### #1: `O(n)`
 
 ```javascript
 function wordOccurrence(word, phrase){
@@ -15,11 +11,8 @@ function wordOccurrence(word, phrase){
   }
   return result
 }
-```
-
-#### #2
-
-```javascript
+#### #2: O(n^2)
+javascript
 function bubble_sort(list){
   for(let i = 0; i < list.length - 1; i++){
     for(let j  = 0; j < list.length - 2; j++){
@@ -32,10 +25,8 @@ function bubble_sort(list){
   }
   return list;
 }
-```
-
-#### #3
-```javascript
+#### #3: O(n)
+javascript
 function factorial(n){
   if(n === 0){
     return 1;
@@ -43,19 +34,13 @@ function factorial(n){
     return n * factorial(n-1);
   }
 }
-```
-
-#### #4
-
-```javascript
+#### #4: O(1)
+javascript
 function bobIsFirst(people){
   return people[0] == 'bob'
 }
-```
-
-#### #5
-
-```javascript
+#### #5: O(n)
+javascript
 function isPalindrome(input){
   const stack = [];
   let output = "";
@@ -67,10 +52,8 @@ function isPalindrome(input){
   }
   return output == input
 }
-```
-
-#### #6
-```javascript
+#### #6: O(n)
+javascript
 function sumOfDivisors(n){
   let result = 0;
   let i = 1;
@@ -82,10 +65,8 @@ function sumOfDivisors(n){
   }
   return result
 }
-```
-
-#### #7
-```javascript
+#### #7: O(n)
+javascript
 function printAllNumbersThenSumPairs(numArray){
   numArray.forEach((num)=>{
     console.log(num);
@@ -96,19 +77,16 @@ function printAllNumbersThenSumPairs(numArray){
     }
   });
 }
-```
-
-#### #8
-```javascript
+#### #8: O(n)
+javascript
 function isPrime(num){
   if(num == 1 || num == 2){
     return false
   }
   for(let i = 2; i < num - 1; i++){
-    if(num % i == 0){
+    if(num % 1 == 0){
       return false
     }
   }
   return true
 }
-```
